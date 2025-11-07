@@ -6,16 +6,31 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.6;
-    background: #f9f9f9;
-    color: #333;
+    background: #f4f1e8;
+    color: #191919;
+}
+
+h1 {
+    color: #f4f1e8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h2,
+h3 {
+    color: #9b4819;
+}
+
+h4 {
+    color: #191919;
+    font-weight: 600;
 }
 
 /* Navbar */
 .navbar {
     background: #333;
-    color: #fff;
+    color: #f4f1e8;
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
@@ -56,7 +71,7 @@ body {
 /* About Section */
 .about-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
@@ -67,7 +82,7 @@ body {
     height: 200px;
     object-fit: cover;
     border-radius: 100%;
-    border: 3px solid #333;
+    border: 3px solid #191919;    
 }
 
 .about-text {
