@@ -68,31 +68,19 @@ h4 {
     text-align: center;
 }
 
-/* About Section */
-.about-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
 
-.about-photo img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 100%;
-    border: 3px solid #191919;    
-}
-
-.about-text {
-    flex: 1;
-    min-width: 250px;
-    text-align: left;
-}
 
 /*Resume*/
 #resume {
     text-align: left;
     width: 900px;
+}
+
+#resume a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#resume li{
+    margin-left: 25px;
 }
