@@ -68,7 +68,15 @@ h4 {
     text-align: center;
 }
 
+.frame-horizontal {
+    width: 560px;
+    height: 315px;
+}
 
+.frame-vertical {
+    width: 315px;
+    height: 560px;
+}
 
 /*Resume*/
 #resume {
@@ -76,11 +84,41 @@ h4 {
     width: 900px;
 }
 
-#resume a{
+#resume a {
     text-decoration: none;
     color: inherit;
 }
 
-#resume li{
+#resume li {
     margin-left: 25px;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        width: 100dvw;
+    }
+
+    .nav-container {
+        
+    }
+
+    #resume {
+        width: 90%;
+    }
+
+    .section {
+        width: 90%;
+        margin: 2rem 5%;
+        padding: 0;
+    }
+
+    .frame-horizontal {        
+        width: 100%;
+        height: 100%;
+    }
+
+    .frame-vertical {
+        align-self: center;
+    }
 }
