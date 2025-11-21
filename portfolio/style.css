@@ -60,12 +60,19 @@ h4 {
     color: #f39c12;
 }
 
+.nav-container button {
+    display: none;
+}
+
+.nav-menu {
+    display: none;
+}
+
 /* Sections */
 .section {
     max-width: 900px;
     margin: 4rem auto;
     padding: 0 2rem;
-    text-align: center;
 }
 
 .frame-horizontal {
@@ -81,7 +88,7 @@ h4 {
 /*Resume*/
 #resume {
     text-align: left;
-    width: 900px;
+    width: 100%;
 }
 
 #resume a {
@@ -95,27 +102,78 @@ h4 {
 
 
 @media (max-width: 768px) {
-    body {
-        width: 100dvw;
+    .navbar {
+        width: 100%;
+        padding: 0 5%;
     }
 
     .nav-container {
-        
+        width: 95%;
+        margin: 0;
+
     }
 
-    #resume {
-        width: 90%;
+    .nav-container button {
+        display: block;
+        background: none;
+        border: none;
+    }
+
+    .nav-container button img {
+        background: none;
+        color: #f4f1e8;
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    #nav-menu {
+        display: block;
+        position: fixed;
+        padding: 20px;
+        background: #333;
+        color: #f4f1e8;
+        width: 50vw;
+        height: 100vh;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #nav-menu.open {
+        transform: translate(0);
+    }
+
+    .nav-links-mobile {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    .nav-links-mobile a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: #f39c12;
     }
 
     .section {
-        width: 90%;
-        margin: 2rem 5%;
-        padding: 0;
+        width: 95%;
+        margin: 2rem 0;
+        padding: 0 5%;
     }
 
-    .frame-horizontal {        
+    .frame-horizontal {
+        height: auto;
         width: 100%;
-        height: 100%;
+        aspect-ratio: 16 / 9;
     }
 
     .frame-vertical {
